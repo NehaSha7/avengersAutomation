@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-23T22:31:19 EDT" name="Default suite" finished-at="2025-05-23T22:31:26 EDT" duration-ms="6789">
+    <groups>
+    </groups>
+    <test started-at="2025-05-23T22:31:19 EDT" name="Default test" finished-at="2025-05-23T22:31:26 EDT" duration-ms="6789">
+      <class name="mytest.MyTestNg">
+        <test-method signature="myFirstSeleniumTest()[pri:0, instance:mytest.MyTestNg@595b007d]" started-at="2025-05-23T22:31:19 EDT" name="myFirstSeleniumTest" finished-at="2025-05-23T22:31:26 EDT" duration-ms="6669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myFirstSeleniumTest -->
+      </class> <!-- mytest.MyTestNg -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
