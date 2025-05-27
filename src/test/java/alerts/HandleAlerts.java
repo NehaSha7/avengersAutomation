@@ -38,16 +38,4 @@ public class HandleAlerts {
 	driver.quit();
 	}
 
-@Test
-public void jsConfirms() {
-	
-	WebDriver. driver = new ChromeDriver();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	driver.manage().window().maximize();
-	driver.get("https://the-internet.herokuapp.com/javascript_alerts");
-	driver.findElement(By.xpath("//*[@id='content']/div/ul/li[2]/button")).click();
-	
 }
-}
-
-
