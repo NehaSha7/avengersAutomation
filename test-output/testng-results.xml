@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-26T21:41:35 EDT" name="Default suite" finished-at="2025-05-26T21:41:40 EDT" duration-ms="5414">
+  <suite started-at="2025-05-27T15:44:06 EDT" name="Default suite" finished-at="2025-05-27T15:44:15 EDT" duration-ms="9233">
     <groups>
     </groups>
-    <test started-at="2025-05-26T21:41:35 EDT" name="Default test" finished-at="2025-05-26T21:41:40 EDT" duration-ms="5414">
+    <test started-at="2025-05-27T15:44:06 EDT" name="Default test" finished-at="2025-05-27T15:44:15 EDT" duration-ms="9233">
       <class name="alerts.HandleAlerts">
-        <test-method signature="jsAlerts()[pri:0, instance:alerts.HandleAlerts@595b007d]" started-at="2025-05-26T21:41:35 EDT" name="jsAlerts" finished-at="2025-05-26T21:41:40 EDT" duration-ms="5284" status="PASS">
+        <test-method signature="jsAlerts()[pri:0, instance:alerts.HandleAlerts@3e27aa33]" started-at="2025-05-27T15:44:06 EDT" name="jsAlerts" finished-at="2025-05-27T15:44:10 EDT" duration-ms="4548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsAlerts -->
+        <test-method signature="jsConfirms()[pri:0, instance:alerts.HandleAlerts@3e27aa33]" started-at="2025-05-27T15:44:10 EDT" name="jsConfirms" finished-at="2025-05-27T15:44:15 EDT" duration-ms="4528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsConfirms -->
       </class> <!-- alerts.HandleAlerts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
