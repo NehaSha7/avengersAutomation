@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-27T15:44:06 EDT" name="Default suite" finished-at="2025-05-27T15:44:15 EDT" duration-ms="9233">
+  <suite started-at="2025-05-27T23:35:32 EDT" name="Default suite" finished-at="2025-05-27T23:35:36 EDT" duration-ms="3681">
     <groups>
     </groups>
-    <test started-at="2025-05-27T15:44:06 EDT" name="Default test" finished-at="2025-05-27T15:44:15 EDT" duration-ms="9233">
-      <class name="alerts.HandleAlerts">
-        <test-method signature="jsAlerts()[pri:0, instance:alerts.HandleAlerts@3e27aa33]" started-at="2025-05-27T15:44:06 EDT" name="jsAlerts" finished-at="2025-05-27T15:44:10 EDT" duration-ms="4548" status="PASS">
+    <test started-at="2025-05-27T23:35:32 EDT" name="Default test" finished-at="2025-05-27T23:35:36 EDT" duration-ms="3681">
+      <class name="toolshoptestcase.toolShopLogin">
+        <test-method signature="shopLogin()[pri:0, instance:toolshoptestcase.toolShopLogin@595b007d]" started-at="2025-05-27T23:35:32 EDT" name="shopLogin" finished-at="2025-05-27T23:35:36 EDT" duration-ms="3633" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jsAlerts -->
-        <test-method signature="jsConfirms()[pri:0, instance:alerts.HandleAlerts@3e27aa33]" started-at="2025-05-27T15:44:10 EDT" name="jsConfirms" finished-at="2025-05-27T15:44:15 EDT" duration-ms="4528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- jsConfirms -->
-      </class> <!-- alerts.HandleAlerts -->
+        </test-method> <!-- shopLogin -->
+      </class> <!-- toolshoptestcase.toolShopLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
