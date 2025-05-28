@@ -2,7 +2,6 @@ package toolshoptestcase;
 
 import java.time.Duration;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,14 +14,13 @@ public class toolShopLogin {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
-		
+
 		driver.get("https://practicesoftwaretesting.com");
-		
-		
+
 		driver.findElement(By.xpath("//*[@id='navbarSupportedContent']/ul/li[4]/a")).click();
-		
+
 		driver.get("https://practicesoftwaretesting.com/auth/register");
-		
+
 		driver.findElement(By.id("first_name")).sendKeys("Neha");
 		driver.findElement(By.id("last_name")).sendKeys("Sharma");
 		driver.findElement(By.id("dob")).sendKeys("1992-04-07");
@@ -34,11 +32,10 @@ public class toolShopLogin {
 		driver.findElement(By.id("phone")).sendKeys("777.666.8822");
 		driver.findElement(By.id("email")).sendKeys("ns123@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("HarryPotter7?");
-		
-		
+
 		String validate = driver.findElement(By.tagName("h3")).getText();
-	    Assert .assertEquals(validate, "Customer registration");
-	    
-	    driver.quit();
+		Assert.assertEquals(validate, "Customer registration");
+
+		driver.quit();
 	}
 }

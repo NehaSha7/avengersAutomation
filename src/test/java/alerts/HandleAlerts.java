@@ -55,18 +55,28 @@ public class HandleAlerts {
 
 		alert = driver.switchTo().alert();
 		alert.dismiss();
-	    messageText = driver.findElement(By.id("result")).getText();
+		messageText = driver.findElement(By.id("result")).getText();
 		Assert.assertEquals(messageText, "You clicked: Cancel");
 		driver.quit();
 	}
-@Test
+
+	@Test
 	public void jsPrompt() {
-	WebDriver driver = new ChromeDriver();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	driver.manage().window().maximize();
-	
-	
-}
-}
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+		driver.get("https://the-internet.herokuapp.com");
+		driver.findElement(By.xpath("//*[@id='content']/div/ul/li[3]/button"));
 
-
+		Alert alert = driver.switchTo().alert();
+		alert.sendKeys("I am learning Java");
+		alert.accept();
+		
+		
+		String messageText = driver.findElement(By.id("result")).getText();
+		Assert.assertEquals(messageText, "I am learning Java");
+		
+		driver.quit();
+		
+	}
+}
