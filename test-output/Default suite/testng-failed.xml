@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="alerts.HandleAlerts">
+      <class name="winhandles.DemoToolsQa">
         <methods>
-          <include name="jsPrompt"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- alerts.HandleAlerts -->
+      </class> <!-- winhandles.DemoToolsQa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

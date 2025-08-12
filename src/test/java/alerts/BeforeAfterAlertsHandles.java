@@ -1,7 +1,5 @@
 package alerts;
 
-import static org.testng.Assert.assertEquals;
-
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
@@ -9,13 +7,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class HandleAlerts {
-	// Refactoring : rewrite the code to make better without changing the output
+public class BeforeAfterAlertsHandles {
 
 	WebDriver driver;
 
+	//@BeforeMethod
 	public void initialise() {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -23,38 +23,32 @@ public class HandleAlerts {
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 	}
 
+	//@AfterMethod
+	public void endTest() {
+		driver.quit();
+	}
+
 	@Test
 	public void jsAlerts() {
 
-		// WebDriver driver = new ChromeDriver();
-		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		// driver.manage().window().maximize();
-		// driver.get("https://the-internet.herokuapp.com/javascript_alerts");
-		// WebElement jsAlert =
-		// driver.findElement(By.xpath("//*[@id=\"content\"]/div/ul/li[1]/button"));
-		// jsAlert.click();
 		initialise();
+
 		driver.findElement(By.xpath("//*[@id=\\'content\\']/div/ul/li[1]/button")).click();
 
 		Alert alert = driver.switchTo().alert();
-		alert.accept(); // click on ok
-
-		// WebElement message = driver.findElement(By.id("result"));
-		// String messageText = message.getText();
+		alert.accept();
 
 		String messageText = driver.findElement(By.id("result")).getText();
 
 		Assert.assertEquals(messageText, "You successfully clicked an alert");
-		driver.quit();
+
 	}
 
 	@Test
 	public void jsConfirms() {
 
-		//WebDriver driver = new ChromeDriver();
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		//driver.manage().window().maximize();
-		//driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+		initialise();
+
 		driver.findElement(By.xpath("//*[@id='content']/ul/li[29]/a")).click();
 
 		Alert alert = driver.switchTo().alert();
@@ -67,15 +61,14 @@ public class HandleAlerts {
 		driver.switchTo().alert().dismiss();
 		messageText = driver.findElement(By.id("result")).getText();
 		Assert.assertEquals(messageText, "You clicked: Cancel");
-		driver.quit();
+
 	}
 
 	@Test
 	public void jsPrompt() {
-		//WebDriver driver = new ChromeDriver();
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		//driver.manage().window().maximize();
-		//driver.get("https://the-internet.herokuapp.com");
+
+		initialise();
+
 		driver.findElement(By.xpath("//*[@id='content']/ul/li[29]/a")).click();
 
 		driver.findElement(By.xpath("//*[@id='content']/div/ul/li[3]/button")).click();
@@ -91,8 +84,6 @@ public class HandleAlerts {
 		driver.switchTo().alert().dismiss();
 		messageText = driver.findElement(By.id("result")).getText();
 		Assert.assertEquals(messageText, "You entered: null");
-
-		driver.quit();
 
 	}
 }
