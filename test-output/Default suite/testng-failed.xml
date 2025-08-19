@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="winhandles.DemoToolsQa">
+      <class name="alerts.julyAssign1">
         <methods>
-          <include name="test"/>
+          <include name="get"/>
         </methods>
-      </class> <!-- winhandles.DemoToolsQa -->
+      </class> <!-- alerts.julyAssign1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

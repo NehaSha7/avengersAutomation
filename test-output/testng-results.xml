@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-11T23:38:06 EDT" name="Default suite" finished-at="2025-08-11T23:38:12 EDT" duration-ms="6533">
+  <suite started-at="2025-08-19T13:40:19 EDT" name="Default suite" finished-at="2025-08-19T13:40:24 EDT" duration-ms="5651">
     <groups>
     </groups>
-    <test started-at="2025-08-11T23:38:06 EDT" name="Default test" finished-at="2025-08-11T23:38:12 EDT" duration-ms="6533">
-      <class name="winhandles.DemoToolsQa">
-        <test-method signature="test()[pri:0, instance:winhandles.DemoToolsQa@38c6f217]" started-at="2025-08-11T23:38:06 EDT" name="test" finished-at="2025-08-11T23:38:12 EDT" duration-ms="6410" status="PASS">
+    <test started-at="2025-08-19T13:40:19 EDT" name="Default test" finished-at="2025-08-19T13:40:24 EDT" duration-ms="5651">
+      <class name="alerts.julyAssign1">
+        <test-method signature="get()[pri:0, instance:alerts.julyAssign1@16293aa2]" started-at="2025-08-19T13:40:19 EDT" name="get" finished-at="2025-08-19T13:40:24 EDT" duration-ms="5572" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- winhandles.DemoToolsQa -->
+        </test-method> <!-- get -->
+      </class> <!-- alerts.julyAssign1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
