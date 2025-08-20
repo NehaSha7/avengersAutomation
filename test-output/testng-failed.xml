@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="alerts.julyAssign1">
+      <class name="avengersAutomation.julyAssign1">
         <methods>
           <include name="get"/>
         </methods>
-      </class> <!-- alerts.julyAssign1 -->
+      </class> <!-- avengersAutomation.julyAssign1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
