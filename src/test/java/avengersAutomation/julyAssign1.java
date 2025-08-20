@@ -1,9 +1,10 @@
-package alerts;
+package avengersAutomation;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Test
@@ -19,14 +20,10 @@ public class julyAssign1 {
 		password.sendKeys("SuperSecretPassword!");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-		String welcomeMessage = driver.findElement(By.xpath("//h4[@class='subheader']")).getText();
+		String message = driver.findElement(By.xpath("//h4[@class='subheader']")).getText();
 
-		String output = welcomeMessage.equals("Welcome to the Secure Area. When you are done click logout below.")
-				? "Welcome message is Ok"
-				: "Fail";
-		System.out.println(output);
-
-		driver.quit();
+		Assert.assertEquals(message, "Welcome to the Secure Area. When you are done click logout below.");
+		driver.quit(); 
 	}
 
 }
