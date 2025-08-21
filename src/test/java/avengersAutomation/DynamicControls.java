@@ -23,15 +23,15 @@ public class DynamicControls {
 
 		WebElement button = driver.findElement(By.xpath("//*[@id='checkbox-example']/button"));
 		button.click();
-
+       
 		String addremoveheading = button.getText();
-		Assert.assertEquals(addremoveheading, "It's gone!");
+		Assert.assertEquals(addremoveheading, "Remove");
 
 		button = driver.findElement(By.xpath("//*[@id='input-example']/button"));
 		button.click();
 
 		String enabledisableheading = button.getText();
-		Assert.assertEquals(enabledisableheading, "It's enabled!");
+		Assert.assertEquals(enabledisableheading, "Enable");
 
 		driver.quit();
 	}
