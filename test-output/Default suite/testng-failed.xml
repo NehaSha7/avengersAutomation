@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="avengersAutomation.julyAssign1">
+      <class name="avengersAutomation.DynamicControls">
         <methods>
-          <include name="get"/>
+          <include name="testControls"/>
         </methods>
-      </class> <!-- avengersAutomation.julyAssign1 -->
+      </class> <!-- avengersAutomation.DynamicControls -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

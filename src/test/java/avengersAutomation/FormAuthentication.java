@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Test
-public class julyAssign1 {
+public class FormAuthentication {
 
 	public static void get() {
 		WebDriver driver = new ChromeDriver();
