@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-21T18:50:48 EDT" name="Default suite" finished-at="2025-08-21T18:50:54 EDT" duration-ms="6535">
+  <suite started-at="2025-08-25T15:23:31 EDT" name="Default suite" finished-at="2025-08-25T15:23:36 EDT" duration-ms="5579">
     <groups>
     </groups>
-    <test started-at="2025-08-21T18:50:48 EDT" name="Default test" finished-at="2025-08-21T18:50:54 EDT" duration-ms="6535">
-      <class name="avengersAutomation.DynamicControls">
-        <test-method signature="testControls()[pri:0, instance:avengersAutomation.DynamicControls@595b007d]" started-at="2025-08-21T18:50:48 EDT" name="testControls" finished-at="2025-08-21T18:50:54 EDT" duration-ms="6397" status="PASS">
+    <test started-at="2025-08-25T15:23:31 EDT" name="Default test" finished-at="2025-08-25T15:23:36 EDT" duration-ms="5579">
+      <class name="avengersAutomation.LocatorsXpathAssignment">
+        <test-method signature="locatorsXpath()[pri:0, instance:avengersAutomation.LocatorsXpathAssignment@38c6f217]" started-at="2025-08-25T15:23:31 EDT" name="locatorsXpath" finished-at="2025-08-25T15:23:36 EDT" duration-ms="5535" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testControls -->
-      </class> <!-- avengersAutomation.DynamicControls -->
+        </test-method> <!-- locatorsXpath -->
+      </class> <!-- avengersAutomation.LocatorsXpathAssignment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

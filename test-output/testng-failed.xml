@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="avengersAutomation.DynamicControls">
+      <class name="avengersAutomation.LocatorsXpathAssignment">
         <methods>
-          <include name="testControls"/>
+          <include name="locatorsXpath"/>
         </methods>
-      </class> <!-- avengersAutomation.DynamicControls -->
+      </class> <!-- avengersAutomation.LocatorsXpathAssignment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
